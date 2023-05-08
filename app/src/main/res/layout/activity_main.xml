@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bagi"
+        android:layout_width="126dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="108dp"
+        android:text="BAGI"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/kurang"
+        app:layout_constraintStart_toEndOf="@+id/kali"
+        app:layout_constraintTop_toBottomOf="@+id/kurang" />
+
+    <Button
+        android:id="@+id/kali"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="118dp"
+        android:text="KALI"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bagi"
+        app:layout_constraintStart_toStartOf="@+id/jumlah"
+        app:layout_constraintTop_toBottomOf="@+id/jumlah" />
+
+    <Button
+        android:id="@+id/kurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="24dp"
+        android:text="KURANG"
+        app:layout_constraintBottom_toTopOf="@+id/bagi"
+        app:layout_constraintEnd_toEndOf="@+id/etangka2"
+        app:layout_constraintStart_toEndOf="@+id/jumlah"
+        app:layout_constraintTop_toBottomOf="@+id/etangka2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HASIL JUMLAH"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="ANGKA PERTAMA"
+        app:layout_constraintEnd_toEndOf="@+id/tvHasil"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/tvHasil"
+        app:layout_constraintTop_toBottomOf="@+id/tvHasil" />
+
+    <EditText
+        android:id="@+id/etangka1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="ANGKA KEDUA"
+        app:layout_constraintEnd_toEndOf="@+id/etangka1"
+        app:layout_constraintStart_toStartOf="@+id/etangka1"
+        app:layout_constraintTop_toBottomOf="@+id/etangka1" />
+
+    <EditText
+        android:id="@+id/etangka2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/jumlah"
+        android:layout_width="117dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="24dp"
+        android:text="jumlah"
+        app:layout_constraintBottom_toTopOf="@+id/kali"
+        app:layout_constraintEnd_toStartOf="@+id/kurang"
+        app:layout_constraintStart_toStartOf="@+id/etangka2"
+        app:layout_constraintTop_toBottomOf="@+id/etangka2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
